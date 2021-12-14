@@ -1,0 +1,52 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: tomato;
+}
+
+.contacts .link {
+    color: green;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Селекторы
+Универсальный селектор
+Тэга
+ */
+
+p {
+    color: teal;
+}
+
+.header-link {
+    color: violet;
+}
+
+[href="https://www.google.com/"]
+{
+    color: teal;
+}
+/* Оращене к ребенку */
+.header-list > li {
+    background-color: yellowgreen;
+}
+/* Оращене к потомку */
+.header-list li {
+    background-color: yellowgreen;
+}
+/* Оращене к соседу */
+.header-tel + button {
+    color: tomato;
+}
+/* Один элемент у ко торого два класса */
+.link.header-link {
+}

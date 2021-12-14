@@ -5,45 +5,94 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Barbershop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header>
-            <a href=""><img src="./images/logo.svg" alt="лого сайта" /></a>
-            <nav>
-                <ul>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Услуги и цены</a></li>
-                    <li><a href="#masters">Мастера</a></li>
-                    <li><a href="">Контакты</a></li>
+        <header class="header">
+            <a class="header-logo link" href=""
+                ><img src="./images/logo.svg" alt="лого сайта"
+            /></a>
+            <nav class="header-nav">
+                <ul class="contacts list">
+                    <li>
+                        <a class="link" href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="tel:+380961111111"
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
+                <ul class="list header-list">
+                    <li class="header-item">
+                        <a
+                            class="link header-link"
+                            href="https://www.google.com/"
+                            >О нас</a
+                        >
+                    </li>
+                    <li class="header-item">
+                        <a class="link header-link" href="">Услуги и цены</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="link header-link" href="#masters">Мастера</a>
+                    </li>
+                    <li class="header-item">
+                        <a
+                            class="link header-link"
+                            href="https://www.google.com/"
+                            >Контакты</a
+                        >
+                    </li>
                 </ul>
             </nav>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <a class="link header-tel" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+            >
             <button type="button">онлайн-запись</button>
         </header>
         <main>
             <section class="hero">
-                <ul>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer"
+                <ul class="list hero-list">
+                    <li class="hero-item">
+                        <a
+                            class="link hero-link"
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
                             >Instagram</a
                         >
                     </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer"
+                    <li class="hero-item">
+                        <a
+                            class="link hero-link"
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
                             >Youtube</a
                         >
                     </li>
                 </ul>
-                <p lang="en">A hair salon for men in Kyiv</p>
-                <h1 lang="en">BarberShop</h1>
-                <p>
+                <p lang="en" class="hero-pre-title">
+                    A hair salon for men in Kyiv
+                </p>
+                <h1 lang="en" class="hero-title">BarberShop</h1>
+                <p class="hero-after-title">
                     Мы эксперты в модных мужских стрижках. Работаем быстро,
                     осторожно и со вкусом.
                 </p>
             </section>
-            <section>
-                <ul>
-                    <li>
+            <section class="about">
+                <ul class="list about-list">
+                    <li class="about-item">
                         <img
                             src="./images/about-img-1.jpg"
                             alt="барбер бреет шею"
@@ -51,7 +100,7 @@
                             height="445"
                         />
                     </li>
-                    <li>
+                    <li class="about-item">
                         <img
                             src="./images/about-img-2.jpg"
                             alt="барбер делает кантик"
@@ -60,13 +109,13 @@
                         />
                     </li>
                 </ul>
-                <p>О нас</p>
-                <h2>Лучший Барбершоп твоего города</h2>
-                <p>
+                <p class="about-pre-title">О нас</p>
+                <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+                <p class="about-after-title">
                     Если ты хочешь добавить в свой образ больше уверенности –
                     тебе точно к нам.
                 </p>
-                <p>
+                <p class="about-text">
                     Мы команда, которая никогда не останавливается на
                     достигнутом и жаждет перемен. И когда ты попадешь в руки
                     нашего мастера, то уже никогда не сможешь быть прежним. Мы
@@ -74,12 +123,12 @@
                     Поэтому, мы всегда готовы усовершенствовать каждого, кто к
                     нам приходит!
                 </p>
-                <button type="button">онлайн-запись</button>
+                <button type="button" class="about-btn">онлайн-запись</button>
             </section>
             <section>
                 <p>Проведи время в компании лучших мастеров</p>
                 <h2>Услуги и цены</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <p>Мужская стрижка</p>
                         <p>от 300 грн.</p>
@@ -97,7 +146,7 @@
                         <p>от 200 грн.</p>
                     </li>
                 </ul>
-                <ul>
+                <ul class="list">
                     <li>
                         <p>Cтрижка у стажера</p>
                         <p>от 50 грн.</p>
@@ -118,7 +167,7 @@
                 <button type="button">онлайн-запись</button>
             </section>
             <section>
-                <ul>
+                <ul class="list">
                     <li>
                         <span>600</span>
                         <p>Довольных клиентов в день</p>
@@ -146,7 +195,7 @@
             <section id="masters">
                 <p>для настоящих ценителей атмосферы</p>
                 <h2>Наши мастера</h2>
-                <ul>
+                <ul class="list">
                     <li>
                         <img
                             src="./images/masters-img-1.jpg"
@@ -182,7 +231,7 @@
             <section>
                 <h2 hidden>галерея</h2>
                 <p>На латинском языке “барба” означает “борода”</p>
-                <ul>
+                <ul class="list">
                     <li>
                         <img
                             src="./images/gallery-img-1.jpg"
@@ -223,9 +272,10 @@
             <section>
                 <h2>Контакты</h2>
                 <address>
-                    <ul>
+                    <ul class="list">
                         <li>
                             <a
+                                class="link"
                                 href="https://goo.gl/maps/FUhfVF4S8dZSCrUF8"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -233,10 +283,12 @@
                             >
                         </li>
                         <li>
-                            <a href="tel:+380441111111">+38 044 111 11 11</a>
+                            <a class="link" href="tel:+380441111111"
+                                >+38 044 111 11 11</a
+                            >
                         </li>
                         <li>
-                            <a href="mailto:barbershop@email.com"
+                            <a class="link" href="mailto:barbershop@email.com"
                                 >barbershop@email.com</a
                             >
                         </li>
@@ -248,14 +300,22 @@
         </main>
         <footer>
             <p>&copy; Copyright 2020</p>
-            <ul>
+            <ul class="list">
                 <li>
-                    <a href="" target="_blank" rel="noopener noreferrer"
+                    <a
+                        class="link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Instagram</a
                     >
                 </li>
                 <li>
-                    <a href="" target="_blank" rel="noopener noreferrer"
+                    <a
+                        class="link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >Youtube</a
                     >
                 </li>
