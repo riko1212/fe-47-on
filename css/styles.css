@@ -1,13 +1,14 @@
-body {
-    font-family: "Open Sans", sans-serif;
-    color: tomato;
+:root {
+    --header-color: #ffffff;
+    --first-btn-color: #ffffff;
+    --second-btn-color: #303030;
+    --accent-color: #ff6c00;
+    --first-title-color: #ffffff;
+    --second-title-color: #303030;
 }
 
-.contacts .link {
-    color: green;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
 .list {
@@ -18,35 +19,264 @@ body {
     text-decoration: none;
 }
 
-/* Селекторы
-Универсальный селектор
-Тэга
- */
-
-p {
-    color: teal;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.header-link {
-    color: violet;
+/* ------------------HEAdER------------------- */
+
+.header {
+    background-color: grey;
 }
 
-[href="https://www.google.com/"]
-{
-    color: teal;
+.header-link,
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
 }
-/* Оращене к ребенку */
-.header-list > li {
-    background-color: yellowgreen;
+
+.current {
+    color: var(--accent-color);
 }
-/* Оращене к потомку */
-.header-list li {
-    background-color: yellowgreen;
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
 }
-/* Оращене к соседу */
-.header-tel + button {
-    color: tomato;
+
+/* .header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+} */
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--first-btn-color);
 }
-/* Один элемент у ко торого два класса */
-.link.header-link {
+
+/* ------------------HERO------------------- */
+
+.hero {
+    background-color: gray;
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--first-title-color);
+}
+
+.hero-after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+/* ------------------ABOUT------------------- */
+
+.about-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.about-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.about-after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--second-btn-color);
+}
+
+/* ------------------PRICES------------------- */
+
+.prices {
+    background-color: var(--second-title-color);
+}
+
+.prices-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--first-title-color);
+}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+.prices-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--first-btn-color);
+}
+
+/* ------------------REASONS------------------- */
+
+.reasons-digit {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.reasons-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: #303030;
+}
+
+.reasons-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.reasons-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.reasons-after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+/* ------------------MASTERS------------------- */
+
+.masters-pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.masters-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
 }
