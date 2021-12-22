@@ -22,7 +22,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <div class="container header-container">
                 <a class="header-logo link" href=""
                     ><img src="./images/logo.svg" alt="лого сайта"
                 /></a>
@@ -56,15 +56,19 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="link header-tel" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                >
-                <button type="button" class="header-btn">онлайн-запись</button>
+                <div class="header-connect">
+                    <a class="link header-tel" href="tel:+380441111111"
+                        >+38 044 111 11 11</a
+                    >
+                    <button type="button" class="header-btn">
+                        онлайн-запись
+                    </button>
+                </div>
             </div>
         </header>
         <main>
             <section class="hero">
-                <div class="container">
+                <div class="container hero-container">
                     <ul class="list hero-list">
                         <li class="hero-item">
                             <a
@@ -85,14 +89,16 @@
                             >
                         </li>
                     </ul>
-                    <p lang="en" class="hero-pre-title">
-                        A hair salon for men in Kyiv
-                    </p>
-                    <h1 lang="en" class="hero-title">BarberShop</h1>
-                    <p class="hero-after-title">
-                        Мы эксперты в модных мужских стрижках. Работаем быстро,
-                        осторожно и со вкусом.
-                    </p>
+                    <div class="hero-right">
+                        <p lang="en" class="hero-pre-title">
+                            A hair salon for men in Kyiv
+                        </p>
+                        <h1 lang="en" class="hero-title">BarberShop</h1>
+                        <p class="hero-after-title">
+                            Мы эксперты в модных мужских стрижках. Работаем
+                            быстро, осторожно и со вкусом.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="about">
@@ -272,6 +278,48 @@
                                 Extreme Barber
                             </p>
                         </li>
+                        <li class="masters-item">
+                            <img
+                                src="./images/masters-img-1.jpg"
+                                alt="барбер стрижет клиента"
+                                width="370"
+                                height="346"
+                            />
+                            <h3 lang="en" class="masters-item-title">
+                                John Smith
+                            </h3>
+                            <p lang="en" class="masters-item-text">
+                                Extreme Barber
+                            </p>
+                        </li>
+                        <li class="masters-item">
+                            <img
+                                src="./images/masters-img-2.jpg"
+                                alt="барбер стрижет клиента"
+                                width="370"
+                                height="346"
+                            />
+                            <h3 lang="en" class="masters-item-title">
+                                Michele Doe
+                            </h3>
+                            <p lang="en" class="masters-item-text">
+                                Extreme Barber
+                            </p>
+                        </li>
+                        <li class="masters-item">
+                            <img
+                                src="./images/masters-img-3.jpg"
+                                alt="барбер стрижет клиента"
+                                width="370"
+                                height="346"
+                            />
+                            <h3 lang="en" class="masters-item-title">
+                                Alan Black
+                            </h3>
+                            <p lang="en" class="masters-item-text">
+                                Extreme Barber
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -279,8 +327,8 @@
                 <div class="container">
                     <h2 class="visually-hidden">галерея</h2>
                     <p>На латинском языке “барба” означает “борода”</p>
-                    <ul class="list">
-                        <li>
+                    <ul class="list gallery-list">
+                        <li class="gallery-item">
                             <img
                                 src="./images/gallery-img-1.jpg"
                                 alt="барбер стрижет клиента"
@@ -288,7 +336,7 @@
                                 height="360"
                             />
                         </li>
-                        <li>
+                        <li class="gallery-item">
                             <img
                                 src="./images/gallery-img-2.jpg"
                                 alt="барбер стрижет клиента"
@@ -296,7 +344,7 @@
                                 height="360"
                             />
                         </li>
-                        <li>
+                        <li class="gallery-item">
                             <img
                                 src="./images/gallery-img-3.jpg"
                                 alt="барбер стрижет клиента"
@@ -304,7 +352,7 @@
                                 height="360"
                             />
                         </li>
-                        <li>
+                        <li class="gallery-item">
                             <img
                                 src="./images/gallery-img-4.jpg"
                                 alt="барбер стрижет клиента"
