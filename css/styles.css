@@ -143,6 +143,14 @@ img {
 
 .hero-right {
     background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+        ),
+        url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     flex-grow: 1;
     padding: 272px 0 206px 96px;
 }
@@ -343,6 +351,7 @@ img {
 .masters {
     padding-top: 130px;
     padding-bottom: 130px;
+    background-color: #f7f7f7;
 }
 
 .masters-pre-title {
@@ -387,6 +396,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
+    margin-bottom: 8px;
 }
 
 .masters-item-text {
@@ -395,7 +405,52 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-bottom: 30px;
 }
+
+.masters-item-content {
+    padding-top: 30px;
+}
+
+.masters-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters-social-item + .masters-social-item {
+    margin-left: 10px;
+}
+
+.masters-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.masters-social-icon {
+    fill: currentColor;
+}
+
+/* .masters-social-icon:hover,
+.masters-social-icon:focus {
+    fill: teal;
+} */
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+    background-color: tomato;
+    color: teal;
+}
+
+/* .masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+    fill: teal;
+} */
 
 /* ------------------GALLERY------------------- */
 
