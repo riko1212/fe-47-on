@@ -18,12 +18,18 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <header class="header">
             <div class="container header-container">
-                <a class="header-logo link" href=""
+                <a
+                    class="header-logo animate__animated animate__bounce animate__infinite infinite link"
+                    href=""
                     ><img src="./images/logo.svg" alt="лого сайта"
                 /></a>
                 <nav class="header-nav">
@@ -60,7 +66,11 @@
                     <a class="link header-tel" href="tel:+380441111111"
                         >+38 044 111 11 11</a
                     >
-                    <button type="button" class="header-btn btn">
+                    <button
+                        type="button"
+                        class="header-btn btn"
+                        data-modal-open
+                    >
                         онлайн-запись
                     </button>
                 </div>
@@ -69,26 +79,28 @@
         <main>
             <section class="hero">
                 <div class="container hero-container">
-                    <ul class="list hero-list">
-                        <li class="hero-item">
-                            <a
-                                class="link hero-link current"
-                                href=""
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Instagram</a
-                            >
-                        </li>
-                        <li class="hero-item">
-                            <a
-                                class="link hero-link"
-                                href=""
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Youtube</a
-                            >
-                        </li>
-                    </ul>
+                    <div class="hero-left">
+                        <ul class="list hero-list">
+                            <li class="hero-item">
+                                <a
+                                    class="link hero-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="hero-item">
+                                <a
+                                    class="link hero-link"
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Youtube</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                     <div class="hero-right">
                         <p lang="en" class="hero-pre-title pre-title">
                             A hair salon for men in Kyiv
@@ -249,12 +261,33 @@
                     <h2 class="masters-title section-title">Наши мастера</h2>
                     <ul class="list masters-list">
                         <li class="masters-item">
-                            <img
-                                src="./images/masters-img-1.jpg"
-                                alt="барбер стрижет клиента"
-                                width="370"
-                                height="346"
-                            />
+                            <div class="masters-item-wrap">
+                                <img
+                                    src="./images/masters-img-1.jpg"
+                                    alt="барбер стрижет клиента"
+                                    width="370"
+                                    height="346"
+                                />
+                                <p class="masters-img-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Maiores laudantium officia
+                                    minima necessitatibus rerum. Dolorem beatae
+                                    excepturi error voluptatem iste autem
+                                    temporibus sed reiciendis dolor, vel illum
+                                    mollitia vero nisi. Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Maiores
+                                    laudantium officia minima necessitatibus
+                                    rerum. Dolorem beatae excepturi error
+                                    voluptatem iste autem temporibus sed
+                                    reiciendis dolor, vel illum mollitia vero
+                                    nisi. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Maiores laudantium officia
+                                    minima necessitatibus rerum. Dolorem beatae
+                                    excepturi error voluptatem iste autem
+                                    temporibus sed reiciendis dolor, vel illum
+                                    mollitia vero nisi.
+                                </p>
+                            </div>
                             <div class="masters-item-content">
                                 <h3 lang="en" class="masters-item-title">
                                     John Smith
@@ -462,5 +495,17 @@
                 </li>
             </ul>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    X
+                </button>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
