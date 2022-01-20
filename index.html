@@ -27,9 +27,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a
-          class="header-logo animate__animated animate__bounce animate__infinite infinite link"
-          href=""
+        <a class="header-logo link" href=""
           ><img src="./images/logo.svg" alt="лого сайта"
         /></a>
         <nav class="header-nav">
@@ -355,7 +353,29 @@
       <div class="connect-wrap">
         <div class="container connect-container">
           <section class="online">
-            <h2>Онлайн-запись</h2>
+            <h2 class="section-title online-title">Онлайн-запись</h2>
+            <form action="#" class="online-form">
+              <div class="online-inputs">
+                <input
+                  type="text"
+                  placeholder="Имя*"
+                  name="online-name"
+                  class="online-input"
+                />
+                <input
+                  type="tel"
+                  placeholder="Телефон*"
+                  name="online-tel"
+                  class="online-input online-input-short"
+                />
+              </div>
+              <textarea
+                name="online-text"
+                class="online-text"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="submit" class="btn online-btn">отправить</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="section-title contacts-title">Контакты</h2>
@@ -412,15 +432,20 @@
         <form action="#">
           <div class="form-field">
             <label class="input-text" for="user-name">Введите имя</label>
-            <input
-              type="text"
-              class="form-input"
-              name="user-name"
-              placeholder="John Dou"
-              required
-              minlength="2"
-              id="user-name"
-            />
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                placeholder="John Dou"
+                required
+                minlength="2"
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label class="input-text" for="user-email">Введите почту</label>
@@ -454,23 +479,29 @@
               placeholder="Коммент"
             ></textarea>
           </div>
+          <div class="form-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="policy-check visually-hidden"
+            />
+            <label for="policy" class="check-text">
+              <!-- <span>
+                <svg class="policy-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span> -->
+              очень важная политика пользования</label
+            >
+          </div>
+          <select name="name" id="">
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Noviy Rozdil">Noviy Rozdil</option>
+          </select>
 
-          <fieldset class="field">
-            <label
-              >male
-              <input type="radio" value="male" name="gender" />
-            </label>
-            <label
-              >female
-              <input type="radio" value="female" name="gender" />
-            </label>
-            <label
-              >other
-              <input type="radio" value="other" name="gender" />
-            </label>
-          </fieldset>
-          <button type="submit">button</button>
-          <button type="reset">reset</button>
+          <button type="submit" class="btn">button</button>
         </form>
       </div>
     </div>
