@@ -1,0 +1,36 @@
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+.about-pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+  &::before {
+    background-color: #303030;
+  }
+}
+
+.about-pre-title .about-title {
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+}
+
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.about-btn {
+  color: var(--second-btn-color);
+}

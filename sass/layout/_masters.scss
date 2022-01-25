@@ -1,0 +1,128 @@
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f7f7f7;
+}
+
+.masters-pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.masters-title {
+  color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.masters-item {
+  /* flex-basis: calc(100% / 3 - 30px); */
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+
+.masters-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.masters-img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(199, 55, 3, 0.637);
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+  .masters-item:hover & {
+    transform: translateY(0);
+  }
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid rebeccapurple;
+  }
+}
+
+/* .masters-item:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+} */
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  margin-bottom: 8px;
+}
+
+.masters-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.masters-item-content {
+  padding-top: 30px;
+}
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.masters-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  &:focus,
+  &:hover {
+    background-color: tomato;
+    color: teal;
+  }
+}
+
+.masters-social-icon {
+  fill: currentColor;
+}
+
+/* .masters-social-icon:hover,
+.masters-social-icon:focus {
+    fill: teal;
+} */
+
+/* .masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+    fill: teal;
+} */

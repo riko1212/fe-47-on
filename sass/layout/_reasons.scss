@@ -1,0 +1,73 @@
+.reasons {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
+
+.reasons-container {
+  display: flex;
+}
+
+.reasons-right,
+.reasons-left {
+  width: calc(50% - 30px);
+}
+
+.reasons-left {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reasons-item {
+  width: 170px;
+  background-color: #f7f7f7;
+  height: 133px;
+}
+
+.reasons-item:nth-child(odd) {
+  margin-top: 30px;
+}
+
+.reasons-item:nth-child(even) {
+  margin-left: 30px;
+}
+
+.reasons-digit {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.reasons-pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.reasons-title {
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+}
+
+.reasons-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}

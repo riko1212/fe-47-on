@@ -1,0 +1,23 @@
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+
+//COMPONENTS
+
+@import "./components/container";
+@import "./components/pre-title";
+@import "./components/btn";
+@import "./components/section-title";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/prices";
+@import "./layout/reasons";
+@import "./layout/masters";
+@import "./layout/gallery";
+@import "./layout/connect-wrap";
+@import "./layout/online";
+@import "./layout/contacts";
