@@ -6,29 +6,28 @@
   padding-bottom: 32px;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 70px;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header__container {
+  @extend %align-list;
 }
 
-.header-list {
+.site-list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.site-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-connect {
+.connect {
   margin-left: auto;
 }
 
-.header-link,
-.header-tel {
+.site-list__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -64,7 +63,7 @@
     color: #ffffff;
 } */
 
-.header-btn {
+.connect__btn {
   color: var(--first-btn-color);
   margin-left: 40px;
 }

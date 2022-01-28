@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  background-color: teal;
+  justify-content: center;
+  @extend %align-list;
+  border-radius: 50%;
+  color: #ffffff;
+  &:focus,
+  &:hover {
+    background-color: tomato;
+    color: teal;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+/* .masters-social-icon:hover,
+.masters-social-icon:focus {
+    fill: teal;
+} */
+
+/* .masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+    fill: teal;
+} */

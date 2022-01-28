@@ -19,9 +19,9 @@
 
 .reasons-list {
   width: 370px;
-  display: flex;
+
   flex-wrap: wrap;
-  align-items: center;
+  @extend %align-list;
 }
 
 .reasons-item {
