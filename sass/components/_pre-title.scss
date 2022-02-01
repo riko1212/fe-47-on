@@ -4,8 +4,11 @@
   // line-height: 1.36;
   // letter-spacing: 0.1em;
   text-transform: uppercase;
-  @include font(11px, 600, 1.36, 0.1em);
+  @include font(11px, 600, 1.91, 0.1em);
   @extend %align-list;
+  @media screen and (min-width: 768px) {
+    @include font(null, null, 1.36, null);
+  }
   &::before {
     content: "";
     height: 1px;
