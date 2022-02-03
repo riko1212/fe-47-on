@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo link" href=""
           ><img src="./images/logo.svg" alt="лого сайта"
@@ -61,10 +61,78 @@
             онлайн-запись
           </button>
         </div>
+        <button type="button" class="menu-open-btn" data-menu-open>O</button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              X
+            </button>
+            <ul class="list mob-menu-list">
+              <li class="mob-menu-list__item">
+                <a
+                  class="link mob-menu-list__link"
+                  href="https://www.google.com/"
+                  >О нас</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="./port.html"
+                  >Услуги и цены</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="#masters">Мастера</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a
+                  class="link mob-menu-list__link"
+                  href="https://www.google.com/"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect mob-menu__connect">
+              <a class="link mob-connect__tel" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button
+                type="button"
+                class="mob-connect__btn btn"
+                data-modal-open
+              >
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="list mob-social">
+              <li class="mob-social__item">
+                <a
+                  class="link mob-social__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-social__item">
+                <a
+                  class="link mob-social__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="hero-social-box">
             <ul class="list hero-social">
@@ -99,7 +167,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="about">
         <div class="container">
           <ul class="list about-list">
@@ -349,20 +417,74 @@
           </p>
           <ul class="list gallery-list">
             <li class="gallery-item">
-              <img
-                src="./images/gallery-img-1.jpg"
-                alt="барбер стрижет клиента"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-1.jpg     1x,
+                    ./images/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-tab-1-1x.jpeg 1x,
+                    ./images/gallery-img-tab-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-mob-1-1x.jpeg 1x,
+                    ./images/gallery-img-mob-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/gallery-img-1.jpg"
+                  alt="барбер стрижет клиента"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery-img-2.jpg     1x,
+                    ./images/gallery-img-2-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-tab-2-1x.jpeg 1x,
+                    ./images/gallery-img-tab-2-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery-img-mob-2-1x.jpeg 1x,
+                    ./images/gallery-img-mob-2-2x.jpeg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/gallery-img-2.jpg"
+                  alt="барбер стрижет клиента"
+                />
+              </picture>
+              <!-- <img
+                srcset="
+                  ./images/gallery-img-2.jpg     1x,
+                  ./images/gallery-img-2-2x.jpeg 2x
+                "
                 src="./images/gallery-img-2.jpg"
                 alt="барбер стрижет клиента"
                 width="270"
                 height="360"
-              />
+              /> -->
             </li>
             <li class="gallery-item">
               <img
@@ -539,5 +661,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
